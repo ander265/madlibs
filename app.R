@@ -15,13 +15,11 @@ ui <- fluidPage(
       textInput("verb", "Enter a verb:", ""),
       textInput("adjective", "Enter an adjective:", ""),
       textInput("adverb", "Enter an adverb:", ""),
-      #actionButton("submit", "Create Story")
+      actionButton("submit", "Create Story")
     ),
     mainPanel(
       h3("Your Mad Libs Story:"),
-      renderText({
-        textOutput("story")
-      })
+      textOutput("story")
     )
   )
 )
